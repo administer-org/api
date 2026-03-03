@@ -2,6 +2,7 @@ import { ApiException, fromHono } from "chanfana";
 import { Hono } from "hono";
 // Endpoints reorganized. Import the new endpoints below.
 import { AppServersGet } from "./endpoints/Get/appservers";
+import { InfoGet } from "./endpoints/Get/info";
 import { ContentfulStatusCode } from "hono/utils/http-status";
 // Dummy endpoint removed.
 
@@ -43,6 +44,9 @@ const openapi = fromHono(app, {
 
 // Register App servers endpoint
 openapi.get("/appservers", AppServersGet);
+
+// Register Info endpoint
+openapi.get("/info", InfoGet);
 
 // Export the Hono app
 export default app;
