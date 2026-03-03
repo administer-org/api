@@ -1,5 +1,6 @@
 import { OpenAPIRoute, contentJson } from "chanfana";
 import type { AppContext } from "../../types";
+import { z } from "zod";
 import servers from "../../config/AppServers.json";
 
 export class AppServersGet extends OpenAPIRoute {
@@ -9,7 +10,7 @@ export class AppServersGet extends OpenAPIRoute {
     responses: {
       "200": {
         description: "App servers",
-        ...contentJson({ servers: Array }),
+        ...contentJson(z.object({ servers: z.array(z.string()) })),
       },
     },
   };
