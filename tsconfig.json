@@ -6,6 +6,8 @@
 		"moduleResolution": "bundler",
 		"types": ["@types/node", "./worker-configuration.d.ts"],
 		"noEmit": true,
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
 		"isolatedModules": true,
 		"forceConsistentCasingInFileNames": true,
 		"skipLibCheck": true,

@@ -1,6 +1,6 @@
 import { ApiException, fromHono } from "chanfana";
 import { Hono } from "hono";
-// Endpoints reorganized. Import the new hello endpoint below.
+// Endpoints reorganized. Import the new endpoints below.
 import { AppServersGet } from "./endpoints/Get/appservers";
 import { ContentfulStatusCode } from "hono/utils/http-status";
 // Dummy endpoint removed.
@@ -40,9 +40,6 @@ const openapi = fromHono(app, {
 		},
 	},
 });
-
-// Register Hello endpoint
-openapi.get("/hello", HelloGet);
 
 // Register App servers endpoint
 openapi.get("/appservers", AppServersGet);
