@@ -5,7 +5,7 @@
     // Add this section below
     "routes": [
         {
-            "pattern": "api.admsoftware.org/*",
+            "pattern": "api.admsoftware.org",
             "custom_domain": true
         }
     ],
