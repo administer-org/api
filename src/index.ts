@@ -1,8 +1,9 @@
 import { ApiException, fromHono } from "chanfana";
 import { Hono } from "hono";
-import { tasksRouter } from "./endpoints/tasks/router";
+// Endpoints reorganized. Import the new hello endpoint below.
+import { AppServersGet } from "./endpoints/Get/appservers";
 import { ContentfulStatusCode } from "hono/utils/http-status";
-import { DummyEndpoint } from "./endpoints/dummyEndpoint";
+// Dummy endpoint removed.
 
 // Start a Hono app
 const app = new Hono<{ Bindings: Env }>();
@@ -40,11 +41,11 @@ const openapi = fromHono(app, {
 	},
 });
 
-// Register Tasks Sub router
-openapi.route("/tasks", tasksRouter);
+// Register Hello endpoint
+openapi.get("/hello", HelloGet);
 
-// Register other endpoints
-openapi.post("/dummy/:slug", DummyEndpoint);
+// Register App servers endpoint
+openapi.get("/appservers", AppServersGet);
 
 // Export the Hono app
 export default app;
