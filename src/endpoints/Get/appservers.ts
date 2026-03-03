@@ -10,12 +10,12 @@ export class AppServersGet extends OpenAPIRoute {
     responses: {
       "200": {
         description: "App servers",
-        ...contentJson(z.object({ servers: z.array(z.string()) })),
+        ...contentJson(z.array(z.string())),
       },
     },
   };
 
   public async handle(c: AppContext) {
-    return { servers: servers as string[] };
+    return servers as string[];
   }
 }
