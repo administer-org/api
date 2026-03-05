@@ -1,0 +1,63 @@
+{
+    {
+        UserID = 1457766451,
+        Name = "theblackwither4",
+        Job = "Project Owner",
+        hasSupportAccess = true,
+    },
+    {
+        UserID = 133017837,
+        Name = "pyxfluff",
+        Job = "previous owner, AOS, frontend/backend",
+    },
+    {
+        UserID = 938429178,
+        Name = "AjaxTiba",
+        Job = "core features",
+    },
+    {
+        UserID = 3610087630,
+        Name = "dogo8me2",
+        Job = "core assistance, apps",
+    },
+    {
+        UserID = 630064214,
+        Name = "DullerKill7r",
+        Job = "app development",
+    },
+    {
+        UserID = 3239844753,
+        Name = "CDot_NightHawk",
+        Job = "hosting infrastructure",
+    },
+    {
+        UserID = 1381321740,
+        Name = "apexblue1705",
+        Job = "product testing, translation (vi)",
+    },
+    {
+        UserID = 1556153247,
+        Name = "gdr",
+        Job = "translation (ru)",
+    },
+    {
+        UserID = 215537737,
+        Name = "SKrun",
+        Job = "translation (pt)",
+    },
+    {
+        UserID = 1936557762,
+        Name = "WarriorOfLC",
+        Job = "translation (many languages)",
+    },
+    {
+        UserID = 1119454702,
+        Name = "CheekyPine",
+        Job = "translation (es)",
+    },
+    {
+        UserID = 365438147,
+        Name = "pixe_ated",
+        Job = "QuickBlur",
+    },
+}
